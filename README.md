@@ -33,7 +33,7 @@
 
 ### Backend
 
-## 1. Δημιούργησε βάση δεδομένων `restaurant_booking` στη MySQL
+## 1. Δημιούργησε βάση δεδομένων `restaurant_booking` στη MariaDB
  ## 2. Δημιούργησε `.env` αρχείο με:
 
 DB_HOST=localhost
