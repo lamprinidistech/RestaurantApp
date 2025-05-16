@@ -16,7 +16,7 @@
 
 ### Backend:
 - Node.js + Express.js
-- MySQL
+- MariaDB
 - JWT για authentication
 - bcryptjs για κρυπτογράφηση
 - dotenv για περιβαλλοντικές μεταβλητές
