@@ -7,7 +7,7 @@ A full‑featured restaurant reservation application with a Node.js backend and 
 
 [![Δείτε την παρουσίαση](https://img.youtube.com/vi/rPV9cfTbVoE/0.jpg)](https://youtube.com/shorts/rPV9cfTbVoE?feature=share)
 
-📽️ Demo Video
+
 
 
 
