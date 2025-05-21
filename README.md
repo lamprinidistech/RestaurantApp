@@ -100,6 +100,7 @@ Separate upcoming from past bookings
  Project Structure
 
 ## RestaurantApp/
+
 ├── app.js
 ├── db.js
 ├── .env
