@@ -1,40 +1,51 @@
 #  Restaurant  App
 
-Μια πλήρης εφαρμογή κρατήσεων εστιατορίων με Node.js στο backend και React Native (Expo) στο frontend. Οι χρήστες μπορούν να εγγραφούν, να συνδεθούν, να κάνουν κρατήσεις και να δουν το ιστορικό τους.
-
+A full‑featured restaurant reservation application with a Node.js backend and React Native (Expo) frontend. Users can register, log in, make reservations, and view their booking history.
 ---
 
-## 📽️ Βίντεο Παρουσίασης | Project Demo Video
+## 📽️  | Project Demo Video
 
 [![Δείτε την παρουσίαση](https://img.youtube.com/vi/rPV9cfTbVoE/0.jpg)](https://youtube.com/shorts/rPV9cfTbVoE?feature=share)
 
-▶️ Πατήστε στην εικόνα για να δείτε την παρουσίαση.
+📽️ Demo Video
 
----
 
-##  Τεχνολογίες
 
-### Backend:
-- Node.js + Express.js
-- MariaDB
-- JWT για authentication
-- bcryptjs για κρυπτογράφηση
-- dotenv για περιβαλλοντικές μεταβλητές
+▶️ Click the image to watch the demo.
 
-### Frontend (Expo App):
-- React Native (Expo Router)
-- Axios για API calls
-- AsyncStorage για αποθήκευση token
-- Animated API για UI transitions
+##  Technologies
 
----
+Backend
 
-## ⚙️ Οδηγίες Εγκατάστασης
+Node.js & Express.js
 
-### Backend
+MariaDB
 
-## 1. Δημιούργησε βάση δεδομένων `restaurant_booking` στη MariaDB
- ## 2. Δημιούργησε `.env` αρχείο με:
+JWT for authentication
+
+bcryptjs for password hashing
+
+dotenv for environment variables
+
+Frontend (Expo App)
+
+React Native with Expo Router
+
+Axios for API calls
+
+AsyncStorage for storing the token
+
+Animated API for UI transitions
+
+##  Installation Guide
+
+Backend
+
+Create the database
+
+Create a MariaDB database named restaurant_booking.
+
+Create a .env file
 
 DB_HOST=localhost
 DB_USER=root
@@ -43,71 +54,74 @@ DB_PORT=3308
 DB_NAME=restaurant_booking
 JWT_SECRET=your_secret_key
 
+Install dependencies & start the server
 
-### 3. Εγκατάσταση εξαρτήσεων και εκκίνηση:
-
-```bash
 npm install
 node app.js
-Frontend
-Πήγαινε στον φάκελο frontend/
 
-bash
-Αντιγραφή
-Επεξεργασία
+Frontend
+
+Navigate to the frontend/ folder and install dependencies:
+
 cd frontend
 npm install
 npx expo start
 
-2 Στο config.js, άλλαξε το LOCAL_IP με το IP του backend σου.
+In config.js, replace LOCAL_IP with the IP address of your backend server.
 
-## Λειτουργικότητα
-Login & Register
-Φόρμα σύνδεσης και εγγραφής
+## Features
 
-Αποθήκευση JWT token
+Authentication
 
-Πλοήγηση βάσει session
+Registration and login forms
 
-Κρατήσεις
-Προβολή εστιατορίων
+JWT token storage in AsyncStorage
 
-Αναζήτηση με βάση όνομα
+Session‑based navigation
 
-Επιλογή ημερομηνίας, ώρας και ατόμων
+Reservations
 
-Επιβεβαίωση κράτησης
+Browse available restaurants
 
-Προφίλ
-Προβολή ιστορικού κρατήσεων
+Search by name
 
-Διαγραφή κράτησης
+Select date, time, and number of guests
 
-Διάκριση μελλοντικών και παρελθοντικών κρατήσεων
+Confirm reservation
 
-📂 Δομή Project
-RestaurantApp/
+Profile
+
+View reservation history
+
+Cancel reservations
+
+Separate upcoming from past bookings
+
+ Project Structure
+
+## RestaurantApp/
 ├── app.js
 ├── db.js
 ├── .env
 ├── package.json
 ├── package-lock.json
 ├── middleware/
-│ └── auth.js
+│   └── auth.js
 ├── routes/
-│ ├── auth.js
-│ ├── reservations.js
-│ └── restaurants.js
+│   ├── auth.js
+│   ├── reservations.js
+│   └── restaurants.js
 └── frontend/
-└── app/
-├── restaurants/
-│ ├── index.js
-│ └── RestaurantsScreen.js
-├── booking.js
-├── config.js
-├── index.js
-├── login.js
-├── LoginScreen.js
-├── profile.js
-├── _layout.tsx
-└── +not-found.tsx
+    └── app/
+        ├── restaurants/
+        │   ├── index.js
+        │   └── RestaurantsScreen.js
+        ├── booking.js
+        ├── config.js
+        ├── index.js
+        ├── login.js
+        ├── LoginScreen.js
+        ├── profile.js
+        ├── _layout.tsx
+        └── +not-found.tsx
+
